@@ -27,7 +27,7 @@ void Print2DArray(double[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write(array[i,j]+" ");
+            Console.Write($"{array[i,j]:F2}"+" ");
         }
         Console.WriteLine();
     }
@@ -45,3 +45,12 @@ int maxValue = Convert.ToInt32(Console.ReadLine());
 double[,] myArray = Create2DRandomArray(rows, columns, minValue, maxValue);
 
 Print2DArray(myArray);
+
+
+
+// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// 17 -> такого числа в массиве нет
